@@ -1,0 +1,159 @@
+.sidebar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  width: 60px;
+  background-color: #1e293b;
+  color: white;
+  transition: width 0.3s ease, transform 0.3s ease;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.sidebar:hover {
+  width: 250px;
+}
+
+/* Keep icons visible even when collapsed */
+.sidebar .folder::before,
+.sidebar .subfolder::before {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+}
+
+/* SIDEBAR TITLE */
+.sidebar-title {
+  text-align: center;
+  font-size: 1.1rem;
+  padding: 10px 0;
+  margin-bottom: 8px;
+  color: #fff;
+  transition: opacity 0.3s ease;
+}
+
+/* Hide title text when collapsed */
+.sidebar:not(:hover) .sidebar-title {
+  opacity: 0;
+}
+
+/* LISTS */
+.sidebar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar ul {
+  list-style: none;  /* Removes dots (bullets) */
+  padding-left: 0;   /* Optional: removes extra left padding */
+  margin: 0;          /* Optional: aligns neatly */
+}
+.sidebar li {
+  list-style-type: none;  /* Ensures no dots at all */
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.folder, .subfolder {
+  cursor: pointer;
+  padding: 8px 12px;
+  margin: 3px 0;
+  border-radius: 6px;
+  transition: background 0.2s ease, padding-left 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.folder:hover, .subfolder:hover {
+  background-color: #334155;
+  padding-left: 18px;
+}
+
+/* --- SEARCH BAR --- */
+.sidebar-search {
+  padding: 8px 10px;
+  position: sticky;
+  top: 0;
+  background-color: #1e293b;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sidebar-search input {
+  width: 100%;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+  background-color: #334155;
+  color: #fff;
+  transition: background-color 0.2s ease, width 0.3s ease;
+}
+
+.sidebar-search input::placeholder {
+  color: #cbd5e1;
+}
+
+.sidebar-search input:focus {
+  background-color: #475569;
+}
+
+/* SEARCH RESULT LIST */
+.search-results {
+  background-color: #1e293b;
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid #334155;
+}
+
+.search-results li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-size: 0.9rem;
+  color: #e2e8f0;
+}
+
+.search-results li:hover {
+  background-color: #334155;
+}
+
+/* Add a small visual divider */
+.search-divider {
+  height: 1px;
+  background-color: #334155;
+  margin: 5px 0;
+}
+
+
+/* SUBMENU */
+.submenu {
+  padding-left: 15px;
+  border-left: 2px solid #16a085;
+}
+
+.sub-submenu {
+  padding-left: 25px;
+  background-color: #24324a;
+}
+
+.submenu li, .sub-submenu li {
+  padding: 5px 12px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.submenu li:hover, .sub-submenu li:hover {
+  background-color: #475569;
+}
+/* Newly Added*/
+
+

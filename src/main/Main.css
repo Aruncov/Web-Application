@@ -1,0 +1,91 @@
+/* MAIN AREA */
+.main-area {
+  flex: 1;
+  margin-left: 60px;
+  padding: 20px 40px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar:hover ~ .main-area {
+  margin-left: 250px;
+}
+
+/* HOME PAGE */
+.home-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.home-container h1 {
+  font-size: 32px;
+  color: #2c3e50;
+}
+
+.home-container p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* ITEM MASTER */
+.itemmaster-container {
+  padding: 20px;
+}
+
+.form-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.form-section input {
+  padding: 8px;
+  border: 1px solid #729edd;
+  border-radius: 5px;
+}
+
+.form-section button {
+  background-color: #16a03b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-table th,
+.data-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.data-table th {
+  background-color: #393c38;
+  color: white;
+}
+
+.data-table button {
+  margin: 2px;
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.data-table button:first-child {
+  background-color: #85e688;
+  color: white;
+}
+
+.data-table button:last-child {
+  background-color: #c5665b;
+  color: white;
+}

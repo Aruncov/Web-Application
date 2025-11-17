@@ -68,14 +68,16 @@ function Login({ onLogin }) {
       {/* RIGHT PANEL */}
       <div className="login-right">
         <img
-          src="/images/login-art.svg"
+          src="./public/image.png"
           className="login-illustration"
           alt="illustration"
         />
-        <h2>MFA for all accounts</h2>
+        <h2>ERP Manufacturing</h2>
         <p>
-          Secure online accounts with 2FA.  
-          Backup OTP secrets and never lose access.
+          The manufacturing sector is rapidly adopting new technologies to improve its operations.
+          <br />
+          <br />
+          These improvements help increase output, reduce costs, and maintain high product standards.
         </p>
       </div>
     </div>
